@@ -1,7 +1,10 @@
 const express = require('express');
 const PORT = 3000;
 const app = express();
+const methodOverride = require('method-override')
 
+
+app.use(methodOverride('_method'));
 
 
 
