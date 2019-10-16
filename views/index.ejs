@@ -9,13 +9,15 @@
 		<% for (let i = 0; i < animals.length; i++) {%>
 
 		<li>
-
+			
 			<%= animals[i].name %>
-			<form input="/animals/<%=i%>?_method=DELETE" method="POST">
-				<button type='Submit'>Delete</button>
-			</form>
+			
+
 		</li>	
 
+			<form action="/animals/<%=i%>?_method=DELETE" method="POST">
+				<button type='Submit'>Delete</button>
+			</form>
 		<% } %>
 		
 
